@@ -52,7 +52,7 @@
         "sort-packages": true,
         "allow-plugins": {
             "pestphp/pest-plugin": true,
-            "ocramius/package-versions": true
+            "phpstan/extension-installer": true
         }
     },
     "extra": {
