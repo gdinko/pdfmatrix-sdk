@@ -3,10 +3,10 @@
 namespace Gdinko\PdfMatrix\Actions;
 
 trait ManagesMe
-{    
+{
     /**
      * me
-     * 
+     *
      * @throws \Gdinko\PdfMatrix\Exceptions\PdfMatrixException
      *
      * @return array

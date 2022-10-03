@@ -3,7 +3,6 @@
 namespace Gdinko\PdfMatrix\Actions;
 
 use Gdinko\PdfMatrix\Interfaces\PdfRequestInterface;
-use Gdinko\PdfMatrix\Exceptions\PdfMatrixValidationException;
 
 trait ManagesPdf
 {
@@ -11,9 +10,9 @@ trait ManagesPdf
      * pdf
      *
      * @param  \Gdinko\PdfMatrix\Interfaces\PdfRequestInterface $request
-     * 
+     *
      * @throws \Gdinko\PdfMatrix\Exceptions\PdfMatrixValidationException
-     * 
+     *
      * @return \Illuminate\Http\Response|array
      */
     public function pdf(PdfRequestInterface $request)
@@ -24,8 +23,7 @@ trait ManagesPdf
         );
 
         switch ($request->getResponseType()) {
-
-                //return http pdf response
+            //return http pdf response
             case 'pdf':
                 return response(
                     $response->body(),

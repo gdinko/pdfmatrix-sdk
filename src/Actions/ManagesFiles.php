@@ -6,7 +6,7 @@ trait ManagesFiles
 {
     /**
      * listMyFiles
-     * 
+     *
      * @throws \Gdinko\PdfMatrix\Exceptions\PdfMatrixException
      *
      * @return array
@@ -22,9 +22,9 @@ trait ManagesFiles
      * getFile
      *
      * @param  string $hash
-     * 
+     *
      * @throws \Gdinko\PdfMatrix\Exceptions\PdfMatrixException
-     * 
+     *
      * @return string
      */
     public function getFile($hash): string
@@ -38,9 +38,9 @@ trait ManagesFiles
      * deleteFile
      *
      * @param  int $id
-     * 
+     *
      * @throws \Gdinko\PdfMatrix\Exceptions\PdfMatrixException
-     * 
+     *
      * @return array
      */
     public function deleteFile($id): array

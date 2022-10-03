@@ -2,8 +2,8 @@
 
 namespace Gdinko\PdfMatrix;
 
-use Illuminate\Support\Facades\Http;
 use Gdinko\PdfMatrix\Exceptions\PdfMatrixException;
+use Illuminate\Support\Facades\Http;
 
 trait MakesHttpRequests
 {
@@ -12,9 +12,9 @@ trait MakesHttpRequests
      *
      * @param  string $url
      * @param  array $data
-     * 
+     *
      * @throws \Gdinko\PdfMatrix\Exceptions\PdfMatrixException
-     * 
+     *
      * @return \Illuminate\Http\Client\Response
      */
     public function get($url, array $data = [])
@@ -27,9 +27,9 @@ trait MakesHttpRequests
      *
      * @param  string $url
      * @param  array $data
-     * 
+     *
      * @throws \Gdinko\PdfMatrix\Exceptions\PdfMatrixException
-     * 
+     *
      * @return \Illuminate\Http\Client\Response
      */
     public function post($url, array $data = [])
@@ -43,9 +43,9 @@ trait MakesHttpRequests
      * @param  string $verb
      * @param  string $url
      * @param  array $data
-     * 
+     *
      * @throws \Gdinko\PdfMatrix\Exceptions\PdfMatrixException
-     * 
+     *
      * @return \Illuminate\Http\Client\Response
      */
     public function request($verb, $url, $data = [])

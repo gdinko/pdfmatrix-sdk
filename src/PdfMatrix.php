@@ -26,7 +26,7 @@ class PdfMatrix
     /**
      * timeout
      *
-     * @var integer
+     * @var int
      */
     protected $timeout;
 

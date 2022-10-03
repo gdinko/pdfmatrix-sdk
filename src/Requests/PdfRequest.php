@@ -7,14 +7,14 @@ use Gdinko\PdfMatrix\Interfaces\PdfRequestInterface;
 use Illuminate\Support\Facades\Validator;
 
 class PdfRequest implements PdfRequestInterface
-{    
+{
     /**
      * validatedData
      *
      * @var array
      */
     protected $validatedData = [];
-    
+
     /**
      * __construct
      *
@@ -38,7 +38,7 @@ class PdfRequest implements PdfRequestInterface
 
         $this->validatedData = $validator->validated();
     }
-    
+
     /**
      * validationRules
      *
@@ -92,7 +92,7 @@ class PdfRequest implements PdfRequestInterface
             'documentName' => 'string|sometimes',
         ];
     }
-    
+
     /**
      * getValidatedData
      *
@@ -102,7 +102,7 @@ class PdfRequest implements PdfRequestInterface
     {
         return $this->validatedData;
     }
-    
+
     /**
      * getResponseType
      *
