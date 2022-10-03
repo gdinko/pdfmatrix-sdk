@@ -71,7 +71,7 @@ class PdfRequest implements PdfRequestInterface
             'paperFormat' => 'string|sometimes|in:Letter,Legal,Tabloid,Ledger,A0,A1,A2,A3,A4,A5,A6',
             'marginTop' => 'numeric|sometimes',
             'marginRight' => 'numeric|sometimes',
-            'marginRight' => 'numeric|sometimes',
+            'marginBottom' => 'numeric|sometimes',
             'marginLeft' => 'numeric|sometimes',
             'headerHtml' => 'string|sometimes',
             'footerHtml' => 'string|sometimes',
